@@ -29,6 +29,10 @@ def get_items():
     print("hello")
     return jsonify({"id": 1, "name": "Item 1"})
 
+@app.route('/name', methods=['GET'])
+def get_name():
+    print("hello")
+    return "Nitin Singh"
 
 # Route to create a new item
 @app.route('/', methods=['POST'])
