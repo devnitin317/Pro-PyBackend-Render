@@ -6,8 +6,6 @@ from flask_cors import CORS
 from language_tool_python import LanguageTool
 from nltk.tokenize import sent_tokenize
 
-nltk.download('words')
-nltk.download('punkt')
 
 app = Flask(__name__)
 
